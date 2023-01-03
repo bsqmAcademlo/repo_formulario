@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+</head>
+
+<body>
+
+    <form id="formRegister" data-netlify="true">
+        <div>
+            <label for="nameUser">Ingresa tu nombre</label>
+            <input type="text" name="nameUser" id="nameUser" placeholder="Escribe ...">
+        </div>
+
+        <div>
+            <label for="ageUser">Ingresa tu edad</label>
+            <input type="number" name="ageUser" id="ageUser" placeholder="Escribe ...">
+        </div>
+
+        <div>
+            <label for="mailUser">Ingresa tu correo</label>
+            <input type="email" name="mailUser" id="mailUser" placeholder="Escribe ...">
+        </div>
+
+        <div>
+            <label for="pass1">Ingresa tu contraseña</label>
+            <input type="password" name="pass1" id="pass1" placeholder="Escribe ...">
+        </div>
+
+        <div>
+            <label for="pass2">Repite la contraseña</label>
+            <input type="password" name="pass2" id="pass2" placeholder="Escribe ...">
+        </div>
+
+        <div>
+            <label for="dateBorn">Ingresa la fecha de nacimiento</label>
+            <input type="date" name="dateBorn" id="dateBorn">
+        </div>
+
+        <div>
+            <input type="checkbox" id="termsUser" name="termsUser">
+            <label for="termsUser">Aceptas terminos y condiciones</label>
+        </div>
+
+        <div>
+            <label for="countryName">Selecciona tu pais</label>
+
+            <select name="countryName" id="countryName">
+                <option value="colombia">Colombia</option>
+                <option value="argentina">Argentina</option>
+                <option value="ecuador">Ecuador</option>
+                <option value="venezuela">Venezuela</option>
+                <option value="peru">Peru</option>
+                <option value="RD">Republica dominicana</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Seleccione su genero</p>
+
+            <div>
+                <input type="radio" value="M" name="gender" id="masculino">
+                <label for="masculino">Masculino</label>
+            </div>
+            <div>
+                <input type="radio" value="F" name="gender" id="femenino" checked>
+                <label for="femenino">Femenino</label>
+            </div>
+            <div>
+                <input type="radio" value="NA" name="gender" id="NA">
+                <label for="NA">Prefiero no decirlo</label>
+            </div>
+        </div>
+
+        <div>
+            <label for="comments">Dejanos tus comentarios</label>
+            <br>
+            <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+        </div>
+
+        <button>Enviar</button>
+    </form>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="./main.js"></script> -->
+</body>
+
+</html>
